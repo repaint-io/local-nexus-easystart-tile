@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- remember you need a description, license, url and developers and url -->
+	<!--
+	<description>These are required</description>
+	<url>http://repaint.io</url>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+
+	<developers>
+	<developer>
+		<id>some-id</id>
+		<email>your-email</email>
+		<name>Your Name</name>
+	</developer>
+</developers>
+	-->
+
+	<!-- make sure you put your username/password in your settings.xml for sonatype-staging -->
+
+	<distributionManagement>
+		<repository>
+			<id>local-staging</id>
+			<name>Local Nexus Release Repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository> <!-- it is very unusual that you would use this -->
+			<id>local-snapshots</id>
+			<name>Local Snapshot Repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
